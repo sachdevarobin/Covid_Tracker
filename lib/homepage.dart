@@ -7,6 +7,7 @@ import 'package:Covid_Tracker/panels/effectedcountries.dart';
 import 'package:Covid_Tracker/panels/worldwide.dart';
 import 'package:http/http.dart' as http;
 import 'package:Covid_Tracker/panels/info.dart';
+import 'package:pie_chart/pie_chart.dart';
 // import 'package:pie_chart/pie_chart.dart';
 
 class HomePage extends StatefulWidget {
@@ -115,6 +116,20 @@ class _HomePageState extends State<HomePage> {
                   : WorldWidePan(
                       worldData: worldData,
                     ),
+              PieChart(
+                dataMap: {
+                  'Cases': worldData['cases'].toDouble(),
+                  'Active': worldData['active'].toDouble(),
+                  'Recovered': worldData['recovered'].toDouble(),
+                  'Deaths': worldData['deaths'].toDouble(),
+                },
+                colorList: [
+                  Colors.red,
+                  Colors.blue,
+                  Colors.green,
+                  Colors.grey[900]
+                ],
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Text(
