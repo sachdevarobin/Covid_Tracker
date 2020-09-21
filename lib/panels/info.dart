@@ -15,9 +15,13 @@ class InfoPan extends StatelessWidget {
                   context, MaterialPageRoute(builder: (context) => FAQS()));
             },
             child: Container(
+              decoration: BoxDecoration(
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(15),
+              ),
               padding: EdgeInsets.symmetric(vertical: 12, horizontal: 10),
               margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-              color: Colors.black,
+              // color: Colors.teal,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -41,9 +45,13 @@ class InfoPan extends StatelessWidget {
               launch("https://covid19responsefund.org/");
             },
             child: Container(
+              decoration: BoxDecoration(
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(15),
+              ),
               padding: EdgeInsets.symmetric(vertical: 12, horizontal: 10),
               margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-              color: Colors.black,
+              // color: Colors.teal,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -68,9 +76,13 @@ class InfoPan extends StatelessWidget {
                   'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters');
             },
             child: Container(
+              decoration: BoxDecoration(
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(15),
+              ),
               padding: EdgeInsets.symmetric(vertical: 12, horizontal: 10),
               margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-              color: Colors.black,
+              // color: Colors.teal,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[

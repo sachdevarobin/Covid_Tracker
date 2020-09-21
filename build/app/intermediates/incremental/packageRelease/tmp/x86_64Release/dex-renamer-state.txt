@@ -1,0 +1,4 @@
+#Sat Sep 19 16:16:59 IST 2020
+base.0=/media/sachdeva/Others/Robin_Sachdeva/flutter_projects/f/Covid_Tracker/build/app/intermediates/transforms/r8/release/0/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

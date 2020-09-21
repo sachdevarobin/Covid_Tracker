@@ -63,7 +63,7 @@ class StatusPanel extends StatelessWidget {
       height: 80,
       width: width / 2,
       decoration: BoxDecoration(
-        color: Colors.black,
+        color: Colors.teal,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Column(

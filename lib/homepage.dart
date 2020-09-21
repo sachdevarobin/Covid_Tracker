@@ -49,11 +49,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.pink[50],
         appBar: AppBar(
           centerTitle: true,
-          title: Text("COVID-19 TRACKER"),
-          backgroundColor: Colors.black38,
+          title: Text(
+            "COVID-19 TRACKER",
+            // style: TextStyle(color: Colors.black),
+          ),
+          backgroundColor: Colors.teal[800],
         ),
         body: RefreshIndicator(
           onRefresh: fetchData,
@@ -62,14 +64,14 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
-                height: 120,
+                height: 100,
                 alignment: Alignment.center,
                 padding: EdgeInsets.all(10),
-                color: Colors.orange[100],
+                color: Colors.teal[300],
                 child: Text(
                   DataSource.quote,
                   style: TextStyle(
-                    color: Colors.orange[800],
+                    color: Colors.teal[800],
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
@@ -83,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         "World-Meter",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.teal[900],
                           fontWeight: FontWeight.w800,
                           fontSize: 26,
                         ),
@@ -97,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                           },
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                              color: Colors.teal,
                               borderRadius: BorderRadius.circular(15),
                             ),
                             padding: EdgeInsets.all(15),
@@ -133,8 +135,11 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Text(
-                  'Most affected Countries',
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  'Most Affected Countries',
+                  style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal),
                 ),
               ),
               SizedBox(
